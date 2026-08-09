@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./index.css"
 import {Routes,Route} from "react-router-dom"
 import Navbar from "./Navbar";
@@ -13,7 +13,7 @@ import FooterDiv from "./footer"
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(<React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
         <div className="rootdiv">
             <Navbar/>
             
@@ -25,6 +25,6 @@ root.render(<React.StrictMode>
                   </Routes>
             <FooterDiv/>
         </div>
-    </BrowserRouter>
+    </HashRouter>
     
 </React.StrictMode>)

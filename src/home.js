@@ -3,22 +3,10 @@ import "./home.css"
 
 export default function Home(){
     const handleDownload = () => {
-        const fileUrl = process.env.PUBLIC_URL + 'profile.pdf';
-    
-        fetch(fileUrl)
-          .then(response => response.blob())
-          .then(blob => {
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.style.display = 'none';
-            a.href = url;
-            a.download = 'profile.pdf';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-          })
-          .catch(() => alert('File download failed.'));
+        const fileUrl = 'https://drive.google.com/uc?export=download&id=1An1QS99hZPaDaWdmrhNGgfRHcHgYdtuG';
+        window.location.href = fileUrl;
     };
+    
 
     return(
         <div className="greetingdiv">

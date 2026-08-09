@@ -16,6 +16,22 @@ export default function About (){
                     <p>My goal is to apply my skills in a dynamic and challenging environment, contributing to impactful projects while furthering my professional growth.</p>
                 </div>
 
+                <div className="skillsdiv">
+                    <div> <h2>Skills</h2></div>
+                    <div className="skills">
+                        
+                            <div className="skill"> <ul><li>C </li> </ul></div>
+                            <div className="skill"> <ul><li>Python </li></ul> </div>
+                            <div className="skill"> <ul><li>Java </li></ul> </div>
+                            <div className="skill"> <ul><li>HTML </li></ul> </div>
+                            <div className="skill"> <ul><li>CSS </li></ul> </div>
+                            <div className="skill"> <ul><li>JavaScript </li></ul> </div>
+                            <div className="skill"> <ul><li>ReactJS </li></ul> </div>
+                            <div className="skill"> <ul><li>MySQL </li></ul> </div>
+                            <div className="skill"> <ul><li>MongoDB </li></ul> </div>
+                        
+                    </div>
+                </div>
             </div>
         )
 }
